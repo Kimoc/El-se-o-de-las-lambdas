@@ -2,12 +2,13 @@
 
 namespace Modelo
 {
+    [Serializable]
     public class Equipo
     {
         public int ID { get;  }
-        public string Nombre { get; set; }
+        public string Nombre { get;  set; }
         public string Ciudad { get; set; }
-        public string Web { get; set; }
+        public string Web { get;  set; }
         public int Puntos { get; set; }
         public System.Collections.Generic.List<Jugador> Jugadores { get; }
 

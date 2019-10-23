@@ -4,6 +4,8 @@ using System.Text;
 
 namespace Modelo
 {
+    [Serializable]
+
     public class Partido
     {
         public int Id { get; }

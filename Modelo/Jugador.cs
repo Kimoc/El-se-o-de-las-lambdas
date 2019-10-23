@@ -4,10 +4,12 @@ using System.Text;
 
 namespace Modelo
 {
+    [Serializable]
+
     public class Jugador
     {
         public int Id { get; }
-        public string Nombre { get; set; }
+        public string Nombre { get;  set; }
         public string Apellido { get; set; }
         public string Posicion { get; }
         public Jugador Capitan { get; set; }
