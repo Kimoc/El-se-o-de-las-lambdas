@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Creating an XML Tree using LINQ to XML-->
+<Equipo>
+  <Equipo Id="1">
+    <Nombre>Regal Barcelona</Nombre>
+    <Ciudad>Barcelona</Ciudad>
+    <Web>http://www.fcbarcelona.com/web/index_idiomes.html</Web>
+    <Puntos>10</Puntos>
+    <Jugadores Id="1">
+      <Nombre>Juan Carlos</Nombre>
+      <Apellido>Navarro</Apellido>
+      <Posicion>escolta</Posicion>
+      <Capitan />
+      <FechaAlta>2010-01-10T00:00:00</FechaAlta>
+      <Salario>130000</Salario>
+      <Equipo>Regal Barcelona</Equipo>
+      <Altura>1.96</Altura>
+    </Jugadores>
+    <Jugadores Id="8">
+      <Nombre>Victor </Nombre>
+      <Apellido>Sada</Apellido>
+      <Posicion>Base</Posicion>
+      <Capitan>ID: 1 Nombre: Juan Carlos Apellidos: Navarro Posición: escolta  FechaAlta: 10/01/2010 0:00:00 Salario: 130000 Equipo: Regal Barcelona Altura: 1,96</Capitan>
+      <FechaAlta>2012-01-01T00:00:00</FechaAlta>
+      <Salario>80000</Salario>
+      <Equipo>Regal Barcelona</Equipo>
+      <Altura>1.92</Altura>
+    </Jugadores>
+  </Equipo>
+  <Equipo Id="2">
+    <Nombre>Real Madrid</Nombre>
+    <Ciudad>Madrid</Ciudad>
+    <Web>http://www.realmadrid.com/cs/Satellite/es/1193040472450/SubhomeEquipo/Baloncesto.htm</Web>
+    <Puntos>9</Puntos>
+    <Jugadores Id="2">
+      <Nombre>Felipe</Nombre>
+      <Apellido>Reyes</Apellido>
+      <Posicion>Pivot</Posicion>
+      <Capitan>ID: 2 Nombre: Felipe Apellidos: Reyes Posición: Pivot  FechaAlta: 20/02/2009 0:00:00 Salario: 132000 Equipo: Real Madrid Altura: 2,04</Capitan>
+      <FechaAlta>2009-02-20T00:00:00</FechaAlta>
+      <Salario>132000</Salario>
+      <Equipo>Real Madrid</Equipo>
+      <Altura>2.04</Altura>
+    </Jugadores>
+    <Jugadores Id="7">
+      <Nombre>Sergio </Nombre>
+      <Apellido>Llull</Apellido>
+      <Posicion>Escolta</Posicion>
+      <Capitan>ID: 2 Nombre: Felipe Apellidos: Reyes Posición: Pivot  FechaAlta: 20/02/2009 0:00:00 Salario: 132000 Equipo: Real Madrid Altura: 2,04</Capitan>
+      <FechaAlta>2011-10-29T00:00:00</FechaAlta>
+      <Salario>100000</Salario>
+      <Equipo>Real Madrid</Equipo>
+      <Altura>1.9</Altura>
+    </Jugadores>
+    <Jugadores Id="8">
+      <Nombre>Victor </Nombre>
+      <Apellido>Sada</Apellido>
+      <Posicion>Base</Posicion>
+      <Capitan>ID: 1 Nombre: Juan Carlos Apellidos: Navarro Posición: escolta  FechaAlta: 10/01/2010 0:00:00 Salario: 130000 Equipo: Regal Barcelona Altura: 1,96</Capitan>
+      <FechaAlta>2012-01-01T00:00:00</FechaAlta>
+      <Salario>80000</Salario>
+      <Equipo>Real Madrid</Equipo>
+      <Altura>1.92</Altura>
+    </Jugadores>
+  </Equipo>
+  <Equipo Id="3">
+    <Nombre>P.E. Valencia</Nombre>
+    <Ciudad>Valencia</Ciudad>
+    <Web>http://www.valenciabasket.com/</Web>
+    <Puntos>11</Puntos>
+    <Jugadores Id="3">
+      <Nombre>Victor</Nombre>
+      <Apellido>Claver</Apellido>
+      <Posicion>Alero</Posicion>
+      <Capitan>ID: 3 Nombre: Victor Apellidos: Claver Posición: Alero  FechaAlta: 08/03/2009 0:00:00 Salario: 99000 Equipo: P.E. Valencia Altura: 2,08</Capitan>
+      <FechaAlta>2009-03-08T00:00:00</FechaAlta>
+      <Salario>99000</Salario>
+      <Equipo>P.E. Valencia</Equipo>
+      <Altura>2.08</Altura>
+    </Jugadores>
+    <Jugadores Id="4">
+      <Nombre>Rafa </Nombre>
+      <Apellido>Martinez</Apellido>
+      <Posicion>ala-pivot</Posicion>
+      <Capitan>ID: 4 Nombre: Rafa  Apellidos: Martinez Posición: ala-pivot  FechaAlta: 11/11/2010 0:00:00 Salario: 51000 Equipo: P.E. Valencia Altura: 1,91</Capitan>
+      <FechaAlta>2010-11-11T00:00:00</FechaAlta>
+      <Salario>51000</Salario>
+      <Equipo>P.E. Valencia</Equipo>
+      <Altura>1.91</Altura>
+    </Jugadores>
+  </Equipo>
+  <Equipo Id="4">
+    <Nombre>Caja Laboral</Nombre>
+    <Ciudad>Vitoria</Ciudad>
+    <Web>http://www.baskonia.com/prehomes/prehomes.asp?id_prehome=69</Web>
+    <Puntos>22</Puntos>
+    <Jugadores Id="5">
+      <Nombre>Fernando</Nombre>
+      <Apellido>San Emeterio</Apellido>
+      <Posicion>Alero</Posicion>
+      <Capitan>ID: 6 Nombre: Mirza Apellidos: Teletovic Posición: Pivot  FechaAlta: 13/05/2010 0:00:00 Salario: 77000 Equipo: Caja Laboral Altura: 2,06</Capitan>
+      <FechaAlta>2008-09-22T00:00:00</FechaAlta>
+      <Salario>60000</Salario>
+      <Equipo>Caja Laboral</Equipo>
+      <Altura>1.99</Altura>
+    </Jugadores>
+    <Jugadores Id="6">
+      <Nombre>Mirza</Nombre>
+      <Apellido>Teletovic</Apellido>
+      <Posicion>Pivot</Posicion>
+      <Capitan>ID: 6 Nombre: Mirza Apellidos: Teletovic Posición: Pivot  FechaAlta: 13/05/2010 0:00:00 Salario: 77000 Equipo: Caja Laboral Altura: 2,06</Capitan>
+      <FechaAlta>2010-05-13T00:00:00</FechaAlta>
+      <Salario>77000</Salario>
+      <Equipo>Caja Laboral</Equipo>
+      <Altura>2.06</Altura>
+    </Jugadores>
+  </Equipo>
+  <Equipo Id="5">
+    <Nombre>Gran Canaria</Nombre>
+    <Ciudad>Las Palmas</Ciudad>
+    <Web>http://www.acb.com/club.php?id=CLA</Web>
+    <Puntos>14</Puntos>
+    <Jugadores Id="10">
+      <Nombre>Xavi </Nombre>
+      <Apellido>Rey</Apellido>
+      <Posicion>Pivot</Posicion>
+      <Capitan>ID: 15 Nombre: anonimo Apellidos: anonimo Posición: Ala-pivot  FechaAlta: 01/01/2012 0:00:00 Salario: 4000 Equipo: Gran Canaria Altura: 2</Capitan>
+      <FechaAlta>2008-10-12T00:00:00</FechaAlta>
+      <Salario>104500</Salario>
+      <Equipo>Gran Canaria</Equipo>
+      <Altura>2.09</Altura>
+    </Jugadores>
+    <Jugadores Id="14">
+      <Nombre>Sitapha</Nombre>
+      <Apellido>Savané</Apellido>
+      <Posicion>Pivot</Posicion>
+      <Capitan>ID: 14 Nombre: Sitapha Apellidos: Savané Posición: Pivot  FechaAlta: 27/07/2011 0:00:00 Salario: 66000 Equipo: Gran Canaria Altura: 2,01</Capitan>
+      <FechaAlta>2011-07-27T00:00:00</FechaAlta>
+      <Salario>66000</Salario>
+      <Equipo>Gran Canaria</Equipo>
+      <Altura>2.01</Altura>
+    </Jugadores>
+    <Jugadores Id="15">
+      <Nombre>anonimo</Nombre>
+      <Apellido>anonimo</Apellido>
+      <Posicion>Ala-pivot</Posicion>
+      <Capitan>ID: 2 Nombre: Felipe Apellidos: Reyes Posición: Pivot  FechaAlta: 20/02/2009 0:00:00 Salario: 132000 Equipo: Real Madrid Altura: 2,04</Capitan>
+      <FechaAlta>2012-01-01T00:00:00</FechaAlta>
+      <Salario>4000</Salario>
+      <Equipo>Gran Canaria</Equipo>
+      <Altura>2</Altura>
+    </Jugadores>
+  </Equipo>
+  <Equipo Id="6">
+    <Nombre>CAI Zaragoza</Nombre>
+    <Ciudad>Zaragoza</Ciudad>
+    <Web>http://basketzaragoza.net/</Web>
+    <Puntos>23</Puntos>
+    <Jugadores Id="11">
+      <Nombre>Carlos </Nombre>
+      <Apellido>Cabezas</Apellido>
+      <Posicion>Base</Posicion>
+      <Capitan>ID: 14 Nombre: Sitapha Apellidos: Savané Posición: Pivot  FechaAlta: 27/07/2011 0:00:00 Salario: 66000 Equipo: Gran Canaria Altura: 2,01</Capitan>
+      <FechaAlta>2012-01-21T00:00:00</FechaAlta>
+      <Salario>105000</Salario>
+      <Equipo>CAI Zaragoza</Equipo>
+      <Altura>1.86</Altura>
+    </Jugadores>
+    <Jugadores Id="12">
+      <Nombre>Pablo </Nombre>
+      <Apellido>Aguilar</Apellido>
+      <Posicion>Alero</Posicion>
+      <Capitan>ID: 14 Nombre: Sitapha Apellidos: Savané Posición: Pivot  FechaAlta: 27/07/2011 0:00:00 Salario: 66000 Equipo: Gran Canaria Altura: 2,01</Capitan>
+      <FechaAlta>2011-06-14T00:00:00</FechaAlta>
+      <Salario>51700</Salario>
+      <Equipo>CAI Zaragoza</Equipo>
+      <Altura>2.03</Altura>
+    </Jugadores>
+    <Jugadores Id="13">
+      <Nombre>Rafa</Nombre>
+      <Apellido>Hettsheimeir</Apellido>
+      <Posicion>Pivot</Posicion>
+      <Capitan>ID: 13 Nombre: Rafa Apellidos: Hettsheimeir Posición: Pivot  FechaAlta: 15/04/2008 0:00:00 Salario: 58300 Equipo: CAI Zaragoza Altura: 2,08</Capitan>
+      <FechaAlta>2008-04-15T00:00:00</FechaAlta>
+      <Salario>58300</Salario>
+      <Equipo>CAI Zaragoza</Equipo>
+      <Altura>2.08</Altura>
+    </Jugadores>
+  </Equipo>
+</Equipo>

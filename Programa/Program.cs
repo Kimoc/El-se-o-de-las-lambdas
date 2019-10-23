@@ -110,6 +110,8 @@ namespace Programa
 
 
             //Al puertas me lo como con patatas
+
+            //Serializar y pasar a xml
             XDocument xmlDocument = new XDocument(
                 new XDeclaration("1.0", "utf-8", "yes"),
                 new XComment("Creating an XML Tree using LINQ to XML"),
@@ -120,9 +122,10 @@ namespace Programa
                                 new XElement("Nombre", equipo.Nombre),
                                 new XElement("Ciudad", equipo.Ciudad),
                                 new XElement("Web", equipo.Web),
-                                new XElement("Puntos", equipo.Puntos)),
+                                new XElement("Puntos", equipo.Puntos),
 
                             from jug in jugadores
+                            where jug.Equipo.Nombre==equipo.Nombre
                             select new XElement("Jugadores", new XAttribute("Id", jug.Id),
                                             new XElement("Nombre", jug.Nombre),
                                             new XElement("Apellido", jug.Apellido),
@@ -132,8 +135,10 @@ namespace Programa
                                             new XElement("Salario", jug.Salario),
                                             new XElement("Equipo", jug.Equipo.Nombre),
                                             new XElement("Altura", jug.Altura))
-                            ));
-            xmlDocument.Save("SerializacionLinq.xml");
+                           
+                            )));
+            //HAY QUE CAMBIAR LA RUTA SI SE USA EN OTRO EQUIPO
+            xmlDocument.Save(@"C:\Users\Kimoc\Desktop\linqquiz-ramanueva\test.xml");
 
 
             Console.WriteLine("Serializacion acabada");                    
