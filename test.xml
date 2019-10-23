@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Creating an XML Tree using LINQ to XML-->
-<Equipo>
+<Equipos>
   <Equipo Id="1">
     <Nombre>Regal Barcelona</Nombre>
     <Ciudad>Barcelona</Ciudad>
@@ -187,4 +187,4 @@
       <Altura>2.08</Altura>
     </Jugadores>
   </Equipo>
-</Equipo>
+</Equipos>

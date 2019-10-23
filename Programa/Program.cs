@@ -109,14 +109,14 @@ namespace Programa
             Console.WriteLine(partidosGanados.Where(e => e.Value == maxValue).Select(e => e.Key).First().ToString());
 
 
-            //Al puertas me lo como con patatas
+            //Al Dragon espero darle una paliza usando el Hechizo "LINQ DESTROZA"
 
-            //Serializar y pasar a xml
+            //Pasar a xml usando LINQ
             XDocument xmlDocument = new XDocument(
                 new XDeclaration("1.0", "utf-8", "yes"),
                 new XComment("Creating an XML Tree using LINQ to XML"),
 
-                new XElement("Equipo",
+                new XElement("Equipos",
                     from equipo in equipos
                     select new XElement("Equipo", new XAttribute("Id", equipo.ID),
                                 new XElement("Nombre", equipo.Nombre),
@@ -137,14 +137,40 @@ namespace Programa
                                             new XElement("Altura", jug.Altura))
                            
                             )));
+            ///////////////////////////////////////////////////////////////////////////////////////////////////
             //HAY QUE CAMBIAR LA RUTA SI SE USA EN OTRO EQUIPO
-            xmlDocument.Save(@"C:\Users\Kimoc\Desktop\linqquiz-ramanueva\test.xml");
+            string rutaParaXML = "C:\\Users\\Kimoc\\Desktop\\linqquiz-ramanueva\\test.xml";
+            //////////////////////////////////////////////////////////////////////////////////////////////////
+            
+            xmlDocument.Save(rutaParaXML);
+            Console.WriteLine("\nXML test.xml creado");
+            Console.WriteLine("\nMostrando test.xml generado");
+            XElement documentoXML = XElement.Load(rutaParaXML);
+            IEnumerable<XElement> equiposEnXML = documentoXML.Elements();
+            foreach (var equi in equiposEnXML)
+            {
+                Console.WriteLine(equi);
+            }
 
 
-            Console.WriteLine("Serializacion acabada");                    
+            //Imprimo los elementos del xml deserializados y al dragon tremenda paliza ha dado porque no todos los jugadores de cada equipo he deserializado
+            Console.WriteLine("\nImprimo los elementos del xml deserializados y al dragon tremenda paliza ha dado porque no todos los jugadores de cada equipo he deserializado");
+            foreach (var equi in equiposEnXML)
+            {
+                Console.WriteLine(
+                   // "\n Equipo: {0}\n Ciudad: {1}\n Web: {2}\n Puntos: {3}\n Jugadores: {4}",
+                   "Equipo: "+ equi.Element("Nombre").Value+" "+
+                   "Ciudad: " + equi.Element("Ciudad").Value+" " +
+                   "Web: " + equi.Element("Web").Value+"\n " +
+                   "Puntos: " + equi.Element("Puntos").Value + "\n " +
+                   "Jugadores: "+equi.Element("Jugadores").Value
+                   
+                    ); 
+            }
 
-   
 
+
+            Console.WriteLine("\n Pulsa enter para salir");
             Console.ReadLine();
         }
     }
